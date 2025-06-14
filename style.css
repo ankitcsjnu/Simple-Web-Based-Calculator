@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.calculator {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 350px;
+  transition: all 0.3s ease;
+}
+
+.display {
+  background: #222;
+  color: #0f0;
+  padding: 20px;
+  font-size: 2em;
+  text-align: right;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.keys button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.keys button:hover {
+  background-color: #ddd;
+}
+
+/* Theme rules for calculator only */
+.calculator.theme-dark {
+  background-color: #333;
+}
+
+.calculator.theme-dark .display {
+  background: #000;
+  color: #0f0;
+}
+
+.calculator.theme-dark .keys button {
+  background-color: #444;
+  color: #fff;
+}
+
+.calculator.theme-dark .keys button:hover {
+  background-color: #555;
+}
